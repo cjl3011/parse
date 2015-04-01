@@ -87,7 +87,7 @@ class iclba_parse(object):
         return json.dumps(r)
 
 def main():
-    word_spider = iclba_parse("http://www.iciba.com/support")
+    word_spider = iclba_parse("http://www.iciba.com/abandon")
     word_json = word_spider.get_word()
     print "word: ", word_json
     meaning_json = json.loads(word_spider.get_meaning())
